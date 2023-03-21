@@ -1,0 +1,53 @@
+// break statment
+<DOCTYPE html>
+<html>
+<head><title> monika bhosale </title>
+</head>
+<body>
+<script>
+for(i=1;i<5;i++)
+{
+if(i==3)
+{
+break;
+}
+document.write(i);
+document.write("<br>");
+}
+
+ </script>
+
+</body>
+</html>
+o/p:
+1
+2
+//continue statment
+<DOCTYPE html>
+<html>
+<head><title> monika bhosale </title>
+</head>
+<body>
+<script>
+for(i=1;i<5;i++)
+{
+if(i==3)
+{
+    continue;  //skip loop
+}
+document.write(i);
+document.write("<br>");
+}
+
+ </script>
+
+</body>
+</html>
+o/p:
+1
+2
+4
+
+
+
+
