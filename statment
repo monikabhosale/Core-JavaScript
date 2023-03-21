@@ -1,0 +1,41 @@
+// if else statement 
+
+<html>
+<head><title> monika bhosale </title>
+</head>
+<body>
+<script>
+var a;
+	var a = 20;
+	if(a==10)
+	document.write("name:monika");
+	else
+	document.write("wrong value");
+	</script>
+
+</body>
+</html>
+
+o/p:
+wrong value
+
+//
+<html>
+<head><title> monika bhosale </title>
+</head>
+<body>
+<script>
+var a;
+	var a = 10;
+	if(a==10)
+	document.write("name:monika");
+	else
+	document.write("wrong value");
+	</script>
+
+</body>
+</html>
+
+o/p:
+name:monika
+
