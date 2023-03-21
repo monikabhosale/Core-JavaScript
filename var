@@ -1,0 +1,15 @@
+<html>
+<head><title> hello js</title>
+</head>
+<body>
+<script >
+var name="hello monika";
+	document.write("hello<br>"+name);
+	</script>	
+
+</body>
+</html>
+o/p:
+
+hello
+hello monika
