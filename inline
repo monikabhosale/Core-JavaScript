@@ -1,0 +1,16 @@
+//inline a way of adding js
+<html>
+<head><title> hello js</title>
+</head>
+<script type ="text/javascript">
+ document.write("hello monika here");
+</script>
+</head>
+<body> 
+	<h1 style = Color:red;> i am Monika Bhosale </h1>
+</body>
+</html>
+
+o/p:
+hello monika here
+i am Monika Bhosale
