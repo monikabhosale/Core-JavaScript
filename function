@@ -1,0 +1,145 @@
+ // create  and call function 
+   <DOCTYPE html>
+<html>
+<head><title> Function </title>
+</head>
+<body>
+<script>
+		// creating function
+			function display()
+			{
+				document.write("monika");
+			}
+			//calling function 
+			display();
+		
+ </script>
+
+</body>
+</html>
+o/p:
+monika
+
+//function call
+
+<DOCTYPE html>
+<html>
+<head><title> Function call </title>
+</head>
+<body>
+<script>
+	
+		document.write("first line <br>");
+			display();
+			document.write("monika bhosale<br>");
+		function display()
+		{
+			document.write("inside function <br>");
+		}
+		document.write("last line <br>");
+	
+
+ </script>
+
+</body>
+</html>
+
+o/p:
+first line
+inside function
+monika bhosale
+last line
+
+//
+<DOCTYPE html>
+<html>
+<head><title> Function parameter </title>
+</head>
+<body>
+<script>
+		function display(name)
+		{
+			document.write(name);
+		}
+		display("monika");
+
+ </script>
+
+</body>
+</html>
+
+o/p:
+monika
+
+// two parameter
+
+<DOCTYPE html>
+<html>
+<head><title> Function parameter </title>
+</head>
+<body>
+<script>
+		function display(name1,name2)
+		{
+			document.write(name1+" to "+ name2);
+			
+		}
+		display("monika","bhosale");
+
+ </script>
+
+</body>
+</html>
+
+o/p:
+monika to bhosale
+
+// function argument missing
+<DOCTYPE html>
+<html>
+<head><title> missing argument</title>
+</head>
+<body>
+<script>
+		function  add(a,b,c)
+		{
+			document.write("A: " + a + " B: " + b + "C: " + c );
+			
+		}
+		add(10,20);   or add(10,20,30);
+
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+A: 10 B: 20C: undefined
+
+//
+<DOCTYPE html>
+<html>
+<head><title>argument object </title>
+</head>
+<body>
+<script>
+		function  disp(name1,name2)
+		{
+			document.write(arguments[0]+ " ");
+			document.write(arguments[1]);
+			
+		}
+		disp("monika","word");
+
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+
+monika word
+
+
