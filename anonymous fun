@@ -1,0 +1,68 @@
+Anonymous functions allow the creation of function which have no specified name.
+- can be stored in a variable
+-can be returned in a function
+-can be pass in a function
+
+syntax:-
+function()
+{
+body of function;
+};
+
+store Anonymous function in variable
+var a= function(){
+ document.write("monika");
+ };
+ a();
+ 
+ var a=function(x,y){
+ document.write(x+" "+y);
+ };
+ a(10,20);
+ 
+ <!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+ 
+	   // Anonymous function 
+	   disp();
+	   var disp = function()
+	   {
+	   	   document.write("monika");
+         };
+		 disp();
+	 
+ </script>
+
+</body>
+</html>
+
+// passing Anonymous as argument
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+ 
+	   // passing Anonymous function as argument 
+	    function disp(myfun)
+	   {
+	   	   return myfun;
+		   }
+		   document.write(disp("monika"));
+         
+	 
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+monika
+
+
