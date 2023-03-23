@@ -1,0 +1,93 @@
+// rest parameter are only the ones that haven't been given a separate name,while the arguments object contains all arguments object contains  all arguments passed to the function .
+// the arguments object is not a real array,while rest parameters are array instance , meaning methods like sort , map, forEach or Pop can be applied on it directly.
+// the arguments object has additional functional specific to itself (like the callee property).
+<DOCTYPE html>
+<html>
+<head><title>rest parameter</title>
+</head>
+<body>
+<script>
+		function  restShow(...args)
+		{
+			console.log(args);
+		}
+		restShow(10,20,30,40,50);
+		
+		 function show()
+		 {
+		 console.log(arguments);
+		 }
+		 show(10,20,30,40,50);
+		 
+ </script>
+
+</body>
+</html>
+
+o/p
+more tools 
+developers tools
+ console
+ Array(5)
+0: 10
+1: 20
+2: 30
+3: 40
+4: 50
+length: 5
+
+arguments(5)
+0: 10
+1: 20
+2: 30
+3: 40
+4: 50
+callee: ƒ show()
+length: 5
+
+//<DOCTYPE html>
+<html>
+<head><title>rest parameter</title>
+</head>
+<body>
+<script>
+		function  restShow(a,...args)
+		{
+		console.log("a:" + a);
+			console.log(args);
+		}
+		restShow(10,20,30,40,50);
+		
+		 function show(a)
+		 {
+		 console.log("a:" + a);
+		 console.log(arguments);
+		 }
+		 show(10,20,30,40,50);
+		 
+ </script>
+
+</body>
+</html>
+
+
+o/p
+a:10
+new 1.html:10 
+(4) [20, 30, 40, 50]
+0: 20
+1: 30
+2: 40
+3: 50
+length: 4
+
+rguments(5) [10, 20, 30, 40, 50, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+0: 10
+1: 20
+2: 30
+3: 40
+4: 50
+callee: show(a)
+length: 5
+
+
