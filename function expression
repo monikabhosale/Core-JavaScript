@@ -1,0 +1,64 @@
+when we create a funcyion and assign it to a variable , known as function expression.
+ex:
+var myfun=function show(){
+document.write("monika");
+};
+myfun();
+
+note:
+you can't function expression before functiondefinition.
+function expression in javascript are not  hoisted , unlike function declarations.
+myfun();
+var myfun=function show()
+{
+document.write("monika");
+};
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+	   // function expression
+	   var disp = function show()
+	   {
+	   	   document.write("monika");
+         };
+		 disp();
+	 
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+monika
+
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+ 
+	   // function expression
+	   disp();
+	   var disp = function show()
+	   {
+	   	   document.write("monika");
+         };
+		 disp();
+	 
+ </script>
+
+</body>
+</html>
+
+
+
+o/p:
+new 1.html:9 Uncaught TypeError: disp is not a function
+    at new 1.html:9:5
