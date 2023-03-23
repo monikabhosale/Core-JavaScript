@@ -1,0 +1,212 @@
+variable scope
+javascript has two scopes:
+Global, local
+global scope: A variable that is declared outside a function definition is a global variable , and its value is accessible throghtout your program.
+In a web browser,global variables are deleted when you close the browser window(or tab), but remain available to new pages loaded into the same window.
+var a=10: //global variable 
+function add(b){
+return(a+b); // a is global variable
+}
+document,write(add(20));
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> varible scope</title>
+</head>
+<body>
+<script>
+// accessible from anywhere
+		var i=" i am global varible"; // global varible
+		 function show(){
+		 document.write(i + "<br>");
+		 }
+		 show();
+		 
+ </script>
+
+</body>
+</html>
+
+o/p
+i am global varible
+
+<!DOCTYPE html>
+<html>
+<head><title> varible scope</title>
+</head>
+<body>
+<script>
+// accessible from anywhere
+		var i=" i am global varible"; // global varible
+		 function show(){
+		 document.write(i + "<br>");  // access inside function
+		 }
+		 show();
+		 document.write(i + "<br>"); // access  outside  function
+ </script>
+
+</body>
+</html>
+
+
+o/p
+i am global varible
+i am global varible
+
+<!DOCTYPE html>
+<html>
+<head><title> varible scope</title>
+</head>
+<body>
+<script>
+// accessible from anywhere
+		var i= " i am global varible"; // global varible
+		 function show(){
+		 document.write(i + "<br>");  // access inside function
+		 }
+		 show();
+		 
+		 document.write(i + "<br>"); // access  outside  function
+		 
+		 function disp()
+		 {
+		  document.write(i + "<br>");  // access inside function
+		  }
+		  disp();
+		  if(true)
+		  {
+				document.write(i + "<br>"); // access inside function
+		  }
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+i am global varible
+i am global varible
+i am global varible
+i am global varible
+
+// Local scope
+
+// A variable that is declared inside a function definition is local. It is created  and destroyed every time the function is executed ,
+and  it cannot be  been declared with var it is created as a global variable
+
+function add(b)
+{ 
+var a=10; // local variable
+return(a+b);
+}
+document.write(add(20));
+
+function add(b){
+a=10;
+return(a+b);
+}
+document.write(add(20));
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> varible scope</title>
+</head>
+<body>
+<script>
+	var i = "I am global variable";
+  function show()
+  {
+  var j = " i am local variable";  // local variable
+    document.write(j + "<br>");
+	}
+	show();
+	document.write (i + "<br>");
+	document.write (j + "<br>");
+  
+ </script>
+
+</body>
+</html>
+
+o/p:
+i am local variable
+I am global variable
+
+// local scope if there is function inside a function the inner function can access outer function's variable  but outer function can not inner function's variables.
+function arguments( parameters) work as local variables inside functions.
+
+<!DOCTYPE html>
+<html>
+<head><title> varible scope</title>
+</head>
+<body>
+<script>	
+  function show() 
+  {
+  // local variable 
+   var j= " j  a local variable of outer function";
+   document.write(j +"<br>");
+   }
+   show()
+  
+   
+	
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+j a local variable of outer function
+
+
+/
+<!DOCTYPE html>
+<html>
+<head><title> varible scope</title>
+</head>
+<body>
+<script>	
+  function show() 
+  {
+  // local variable 
+   var j= " j a local variable of outer function";
+   document.write(j +"<br>");
+    function innerfun()
+	{
+	
+	 var k= "k a local variable of inner function";
+		document.write(k+ "<br>");
+	 }
+	 innerfun();
+	}
+   show();
+   
+ </script>
+
+</body>
+</html>
+
+o/p:
+j a local variable of outer function
+k a local variable of inner function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
