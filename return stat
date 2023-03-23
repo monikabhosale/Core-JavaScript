@@ -1,0 +1,74 @@
+// A return statment may be return any type data,including arrays and objects.
+sysntax :
+return(variable or expression);
+eg:- return(3):
+return(a+b);
+return(a);
+ function function_name(part1,para2,..)
+ {
+ code
+ }
+ 
+ // 
+ <!DOCTYPE html>
+<html>
+<head><title> Return statment</title>
+</head>
+<body>
+<script>
+		function add(a,b)
+		{
+		return (a+b);
+		}
+		 var x = add(10,20);
+			 document.write(x);
+		 
+ </script>
+
+</body>
+</html>
+
+o/p:
+30
+//<!DOCTYPE html>
+<html>
+<head><title> Return statment</title>
+</head>
+<body>
+<script>
+		function add(a,b){
+		
+		return (a+b);
+		}
+		 document.write(add(10,20));
+			 
+		 
+ </script>
+
+</body>
+</html>
+
+
+o/p
+30
+//
+<!DOCTYPE html>
+<html>
+<head><title> Return statment</title>
+</head>
+<body>
+<script>
+		function add(a,b){
+		
+		return (a+b);
+		}
+		 document.write(add(10,20));
+		 document.write(add(20,20));	 
+		 document.write(add(30,20));
+ </script>
+
+</body>
+</html>
+
+o/p:
+304050
