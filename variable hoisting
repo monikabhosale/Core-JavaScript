@@ -1,0 +1,87 @@
+hoisting is javascript default of moving declaration to the top of the function ,if defined in a functiom, or  the global context,if outside a function .
+var a; // variable declaration
+var a=0;// variable initialization
+
+ var a=10;
+ 
+ var a;   
+ a=10;
+ 
+ // we write like the 
+   ar a=10;
+   document.write(a);
+   var b=20;
+  
+  //compile phase
+   var a;
+   var b;
+   a=10;
+   document.write(a);
+   b=20;
+   
+variable hoisting
+ A variable can be used it has been declared.
+ 
+ <!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+         var a=80;
+		 document.write(a);
+		 
+		 
+ </script>
+ 
+ o/p:
+ <!DOCTYPE html>
+<html>
+<head><title> variable hoisting</title>
+</head>
+<body>
+<script>	
+         var a=80;
+		 document.write(a);
+		 
+		 
+ </script>
+
+</body>
+</html>
+
+o/p:
+80
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+       var i= "hello";
+	   document.write(i +"<br>");
+	   function show()
+	   {
+	     document.write(i+"<br>");
+		 
+	    var i= "monika bhosale";
+		
+		document.write(i+"<br>");
+		}
+		show();
+		
+		
+		 
+ </script>
+
+</body>
+</html>
+o/p:
+hello
+undefined
+monika bhosale
+
+
+
+
+ 
