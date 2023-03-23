@@ -1,0 +1,92 @@
+// The rest parameter allows to represent an indefinite number of arguments as an array.
+
+function function_name(..args) Or  function function_name(a , ...args)
+{
+block of code
+}
+//
+<DOCTYPE html>
+<html>
+<head><title>rest parameter</title>
+</head>
+<body>
+<script>
+		function  show(... args)
+		{
+			document.write(args);
+		}
+		 show(10);
+
+ </script>
+
+</body>
+</html>
+
+o/p:
+10
+
+<DOCTYPE html>
+<html>
+<head><title>rest parameter</title>
+</head>
+<body>
+<script>
+		function  show(a, ... args)
+		{
+			document.write(args);
+		}
+		 show(10,20,33,4,55,22);
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+20,33,4,55,22
+
+<DOCTYPE html>
+<html>
+<head><title>rest parameter</title>
+</head>
+<body>
+<script>
+		function  show(a, ... args)
+		{
+			document.write(a +"<br>");
+			document.write(args);
+			
+		}
+		 show(10,20,33,4,55,22);
+ </script>
+
+</body>
+</html>
+
+
+10
+20,33,4,55,22
+
+//
+<DOCTYPE html>
+<html>
+<head><title>rest parameter</title>
+</head>
+<body>
+<script>
+		function  show(a, ... args)
+		{
+			document.write(a +"<br>");
+			document.write(args[2]);
+			
+		}
+		 show(10,20,33,4,55,22);
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+10
+4
