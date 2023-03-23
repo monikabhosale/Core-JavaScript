@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title> block scope </title>
+</head>
+<body>
+<script>	
+  // block scope 
+  if(true){
+   var i= 10;; //local varible
+   document.write(i + "<br>");
+  }
+  document.write( i + "<br>");
+   
+ </script>
+
+</body>
+</html>
+
+o/p:
+ 10
+ 10
+
