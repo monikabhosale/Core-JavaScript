@@ -1,0 +1,104 @@
+// A closure is a function having access to the parent scope. IT preserve the data from outside.
+
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+       var i= 10;
+	   function show(){
+	    var j=20;
+		document.write(j + "<br>");
+		document.write(i + "<br>");
+		}
+		 show();
+		
+ </script>
+
+</body>
+</html>
+ o/p:
+ 20
+10
+
+
+// A closure is an inner function that has access to the outer(enclosing)
+function's variables.
+for every closer we have three scopes:-
+- local scope(own scope
+-outer function scope
+-global scope
+
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+       function show()
+	   {
+	   var j="j a local variable of outer function";
+	    document.write(j+"<br>");
+		function innerFun()
+		{
+		var k="k a local of inner function";
+		document.write(k+"<br>");
+		document.write(j+"<br>");
+		}
+		innerFun()
+		}
+		show();
+	 
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+j a local variable of outer function
+k a local of inner function
+j a local variable of outer function
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> variable hosting</title>
+</head>
+<body>
+<script>	
+       function show()
+	   {
+	   var j="j a local variable of outer function";
+	    document.write(j+"<br>");
+		function innerFun()
+		{
+		var k="k a local of inner function";
+		document.write(k+"<br>");
+		document.write(j+"<br>");
+		}
+		innerFun()
+		document.write(k+"<br>");
+		document.write(j+"<br>");
+		
+		}
+		show();
+	 
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+j a local variable of outer function
+k a local of inner function
+j a local variable of outer function
+
+
+Uncaught ReferenceError: k is not defined
+    at show (new 1.html:18:18)
+    at new 1.html:22:3
+show @ new 1.html:18
+(anonymous) @ new 1.html:22
