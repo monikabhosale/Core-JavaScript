@@ -1,0 +1,179 @@
+An arrow function expression (previouls , and now incorrectly known as fat arrow function ) has a shorter syntax 
+copared to function expression know as fat arrow function ) has a shorter syntax compared to function expression . arrow function are always anonymous.
+ syntax. ()=>{statements};
+ var myfun=function show(){
+ document.write("monika");
+ };
+  vra myfun=()=>{document.write("monika");};
+  
+<!DOCTYPE html>
+<html>
+<head><title> arrow function</title>
+</head>
+<body>
+<script>
+// function expression	
+  var myfun1 = function show(){
+  document.write ("monika");
+  };
+  //Anonymous function 
+  var myfun2=function(){
+  document.write("monika");
+  };
+  // arrow function
+  var myfun=() =>{
+  document.write("bhosale");
+  }
+  myfun();
+		    
+ </script>
+
+</body>
+</html// arrow function
+
+<!DOCTYPE html>
+<html>
+<head><title> arrow function</title>
+</head>
+<body>
+<script>
+  // arrow function
+  var myfun=() =>{
+  document.write("bhosale");
+  }
+  myfun();
+		   
+
+	 
+ </script>
+
+</body>
+</html>
+
+
+o/p:
+bhosale
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> arrow function with parameter</title>
+</head>
+<body>
+<script>
+  // arrow function with parameter
+  var myfun = (a) =>{
+  document.write(a);
+  };
+  myfun(10);
+		   
+
+	 
+ </script>
+
+</body>
+</html>
+
+o/p:
+10
+//
+<!DOCTYPE html>
+<html>
+<head><title> arrow function with parameter</title>
+</head>
+<body>
+<script>
+  // arrow function with parameter
+  var myfun = (a,b) =>{
+  document.write(a + " " + b);
+  };
+  myfun(10,20);
+		   
+
+	 
+ </script>
+
+</body>
+</html>
+
+
+o/p; 1020
+//
+<!DOCTYPE html>
+<html>
+<head><title> arrow function with rest parameter</title>
+</head>
+<body>
+<script>
+  // arrow function with parameter
+  var myfun = (a,...args) => {
+  document.write(a + " " + args);
+  };
+  myfun(10,80,2,3,4,78,56,);
+		   
+
+	 
+ </script>
+
+</body>
+</html>
+o/p:
+10 80,2,3,4,78,56
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> arrow function</title>
+</head>
+<body>
+<script>
+  // arrow function 
+  var myfun = a =>document.write(a);
+
+  myfun(10);
+		   
+
+	 
+ </script>
+
+</body>
+</html>
+
+o/p;
+10
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> arrow function</title>
+</head>
+<body>
+<script>
+//function expression
+var myfun1= function show(a){
+return a;
+};
+
+//anonymous functionvar 
+ myfun2 = function(b){
+return b;
+};
+  // arrow function 
+  var myfun = c  => { return c; };
+// arrow function 
+ var myfunN = c => { return c} ;  
+  document.write(myfunN(10));
+   
+ </script>
+
+</body>
+</html>
+o/p:
+10
+
+/*  var myfunN=c==>c; // work
+  var myfunN=c=>{c};  // won't work
+  var myfunN=c=>{return c};  // work
+  
+
+
