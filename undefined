@@ -1,0 +1,31 @@
+the undefined type is used for varible or object properties that either do not  exist or have not been assigned a value . 
+the only value an undefined type can have is undefined.
+ var a;
+  document.write(a);
+  // not assined a value - undefined
+  document.write(b);
+  // not exit - undefined error
+  
+<!DOCTYPE html>
+<html>
+<head><title> Undefined</title>
+</head>
+<body>
+<script>
+var a;
+// value not assigned undefined
+ document.write(a + "<br>");
+ 
+ // b doesnt exist undefined
+ document .write(typeof(b) +"<br>");
+ 
+ //undefined error
+ 
+ document.write(b +  "<br>");
+ 
+</script>
+</body>
+</html>
+o/p:
+undefined
+undefined
