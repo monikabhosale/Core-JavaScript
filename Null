@@ -1,0 +1,20 @@
+the null value indicates an empty value;
+it is essentially a placeholder that represent"nothing", the null value is defined as an empty object so using typeof operator on 
+a variable holding null shows its type to be object.
+
+<!DOCTYPE html>
+<html>
+<head><title> null </title>
+</head>
+<body>
+<script>
+var a=null;
+document.write(a +  "<br>");
+document.write(typeof(a) +"<br>"); 
+</script>
+</body>
+</html>
+
+o/p
+null
+object
