@@ -1,0 +1,63 @@
+Immediately invoked function expression is a javascript function that runs as soon it is defined.
+it is a design patter which is also known as self-excuting anonymous function and contains two major parts.the first is the  anonymous function with lexical scope enclosed within the  grouping operator().
+this prevents accessing variables within the IIFE idiom as well as polluting the global scope.
+ the second part is creating the immediately executing function expression(), though which the javascript engine will directly interpret the function.
+ 
+ ex:
+ (function(){ document.write("monika");})();
+ (function(a,b){document.write(a+""+b);})(10,20);
+  note:
+  avoid creating global varible and functions.
+  as it doesn't define variable and function globally so there will be no name conflicts.
+  scope is limited to that particular function.
+  
+ <!DOCTYPE html>
+<html>
+<head><title> IIFE function atomatic call funtion</title>
+</head>
+<body>
+<script>
+//anonymous functionvar 
+	 (function (){document.write("monika");})(); 
+ </script>
+
+</body>
+</html>
+o/p:
+monika
+
+<!DOCTYPE html>
+<html>
+<head><title> IIFE function atomatic call funtion</title>
+</head>
+<body>
+<script>
+//anonymous functionvar 
+	 (function (){
+	 var a=10;
+	 document.write(a);
+	 })();  
+ </script>
+</body>
+o/p:
+10
+
+//
+<!DOCTYPE html>
+<html>
+<head><title> IIFE function atomatic call funtion parameter </title>
+</head>
+<body>
+<script>
+//anonymous functionvar 
+	 (function (a,b){
+	 var a=10;
+	 document.write(a + " " +b);
+	 })(20,30);
+ </script>
+</body>
+</html>
+o/p:
+10 30
+
+
