@@ -1,0 +1,24 @@
+the typeof operator is used to get data type (return a string )
+of its operand . the operand can be either a literal or a data structure such as a variable, a function , or an object.
+syntax:-
+typeof operand
+typeof(operand)
+ex:-
+typeof"a";
+
+<!DOCTYPE html>
+<html>
+<head><title> typeof </title>
+</head>
+<body>
+<script>
+   var a =13;
+   document.write(typeof(a) +"<br>");
+   document.write(typeof("hello")+ "<br>"); 
+ </script>
+</body>
+</html>
+
+o/p:
+number
+string
