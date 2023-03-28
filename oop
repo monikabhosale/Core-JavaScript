@@ -1,0 +1,52 @@
+object oriented programming(oop) is a programming lang model organized around objects rather than "action"and data rather than logic.
+
+Encapsulation:-
+abstraction
+inheritance
+polymorphism
+object:- an object is collectoion of propeties , and a  property is an association beween a name (or key )and a value . a property's value can be a function , in which case the property 
+is known as a method . In addition to objects that are predefined in the beowser, you can define your own objects.
+var fees={monika:100
+sumit:40,
+ankya:88,
+harsha:89
+total:function(){return(100+40+88+89);}
+};
+
+type of object:4
+ user define objects, native object, host objects, document objects.
+  // declaration and initialization of object.
+  .using object literal
+  
+  syntax: var object_name={};
+  
+  ex:
+  var fees={};
+  fees['mona']=59;    -----> fees.mona=59;
+  
+  fees['total']= function(){return(100+200+300);};
+  fees['total']=sum;
+  
+  function sum()
+  {
+  return(100+200+300);
+  }
+  
+  <!DOCTYPE html>
+<html>
+<head><title> object </title>
+</head>
+<body>
+<script>
+  var fees={};
+  fees.monika=100;
+  fees['riya']=200;
+  fees['harsha']=78;
+  
+  document.write(fees['riya']);
+</script>
+</body>
+</html>
+
+
+
